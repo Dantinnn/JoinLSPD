@@ -79,6 +79,7 @@ app.post("/auth/discord", async (req, res) => {
     // Retornar dados do usuário (sem dados sensíveis)
     const userData = {
       id: user.discordId,
+      discordId: user.discordId,
       username: user.username,
       discriminator: user.discriminator,
       avatar: user.avatar,
