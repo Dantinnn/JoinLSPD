@@ -85,7 +85,7 @@ const userSchema = new mongoose.Schema({
 });
 
 // Índices para melhor performance
-userSchema.index({ discordId: 1 });
+
 userSchema.index({ username: 1 });
 userSchema.index({ 'applications.status': 1 });
 
